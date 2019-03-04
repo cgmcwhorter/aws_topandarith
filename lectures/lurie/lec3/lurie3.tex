@@ -1,3 +1,178 @@
 % !TEX root = ../../../main/aws_topandarith.tex
 \newpage
 \subsection{Lecture 3}
+
+
+$Y \to \spec(\F_q)$
+$|Y(\F_q)|= \sum_{y \in Y(\F_q) \text{iso classes}} \dfrac{1}{|\Aut(y)|}$
+
+\begin{dfn}
+$Y$ satisfies the G-L trace formula if
+	\[
+	\dfrac{|Y(\F_q)|}{q^D}= \tr(u^{-1} \colon H^*(\ov{Y})):=sum (-1)^i \tr(u^{-1} \colon H^1(\ov{Y}))
+	\]
+\end{dfn}
+
+For example, true if $Y$ is a variety
+
+
+Example: $G$ linear algebraic group over $\F_q$
+$Y= BG$
+$\spec R \to Y= BG$ equivalent to principle $G$-bundle on $\spec R$
+
+
+
+Example: $G= \G_m$
+$Y= B\G_m$
+$Y(\F_q)$ is the category of 1-dimensional vector spaces over $\F_q$
+$|Y(\F_q)|= 1/(q-1)$
+
+$D= \dim B|G_m$
+$B\G_m= *//\G_m$
+$\dim B\G_m= -1$
+	\[
+	\dfrac{|Y(\F_q)|}{q^{\dim Y}}= \dfrac{q}{q-1}
+	\]
+
+RHS: $\tr(u^{-1} \colon H^*(\ov{B\G_m}))$
+$\G_m(\C)=\C^*$
+$B\G_m$, $B\C^*$, quotient of a contractible space by free action of $\C^*$
+
+$\C^*$ acts freely on $V \setminus \{0\}$
+$V$ has dimension $n$
+$V \setminus \{0\}= S^{2n-1}$
+
+If $\dim V= \infty$
+$V \setminus \{0\}$ is contractible
+$B\C^*= (V \setminus \{0\})/\C^* =: \C\P^\infty$
+
+$H^*(\C\P^\infty; A) \cong \Lambda[t]$, $\deg t= 2$
+
+$H^*(\ov{B\G_m})= \Q_\ell[t]$, where $\deg t= 2$
+
+$u(t)= q^t$
+$u(t^n)= q^nt^n$
+$\tr(u^{-1} \colon H^*(B\G_m))= \sum_{n \geq 0} q^{-n}= q/(q-1)$
+
+Conclusion: G-L is okay for $B\G_m$.
+
+
+$\ell$-adic homotopy:
+
+$\ov{Y}$ is an algebraic-geometric object over an algebraically closed field $k= \ov{F}_q$
+$y \in \ov{Y}(k)$ 
+
+$\pi_1^{\text{et}}(\ov{Y},y)$ profinite group. Assume $\ov{Y}$ is connected.
+
+Then finite etale covers of $\ov{Y}$ are in correspondence with finite sets with continuous action $\pi_1^\text{et}(\ov{Y},y)$.
+
+$\pi_1^\text{et}(\ov{Y},y)_\ell$ the maximal pro-$\ell$ quotient of $\pi_1^\text{et}(\ov{Y},y)$, $\ell \neq 0$ in $k$
+
+
+Artin-Mazur ($\ell$-adic version)
+
+Assume: $\pi_1(\ov{Y},y)_\ell= 0$ if and only if $H^1_\text{et}(\ov{Y},\Z/\ell)=0$
+Also: $H^n_\text{et}(\ov{Y};\Z/\ell)$ finite.
+
+To $\ov{Y}$, they associate a topological space $Z$ ($\ell$-adic homotopy type at $y$) with 
+
+1) $Z$ is simply connected to $\pi_n Z$ is a finitely generated $\Z_\ell$-module for all $n$
+
+2) $H^*_\text{sing}(Z;\Z/\ell) \simeq H^*_\text{et}(\ov{Y}; \Z/\ell)$
+
+For each $n>0$, $\pi_n(\ov{Y}):= \pi_n(Z)$ a finitely generated $\Z_\ell$-module 
+
+$\pi_n(\ov{Y})_{\Q_\ell}:= \pi_n(\ov{Y})[1/\ell]$ finite dimensional vector space over $\Q_p$
+
+Have a canonical pairing $b: \pi_n(\ov{Y})_{\Q_\ell} \times H^n(\ov{Y}) \to \Q_\ell$
+$f: S^n \to Z$
+$b(f,\eta)= f^*\eta \in H^n(S^n; \Q_\ell) \simeq \Q_\ell$
+$I= H^*_\text{red}(\ov{Y})= \bigoplus_{n \geq 0} H^n(\ov{Y})$
+$b: \pi_*(\ov{Y}) \times I \to \Q_\ell$
+descends to a pairing $b: \pi_*(Y)_{\Q_\ell} \times I/I^2 \to \Q_\ell$, 
+$\eta= \eta' \eta''$
+$f^*(\eta)= f^*(\eta')f^*(\eta'')$
+
+
+
+Assertion: If $H^*(\ov{Y})$ is polynomial ring (or even generators) then $\ov{b}$ is a perfect pairing. 
+	\[
+	\cdots \subseteq I^3 \subseteq I^2 \subseteq I \subseteq H^2(\ov{Y})
+	\]
+
+Ex: $\ov{Y}= \ov{B\G_m}$, this applies
+
+
+Suppose $H(\ov{Y})$ is a polynomial ring
+$\ov{Y}= Y \times_{\spec \F_q} \spec(\ov{F}_q)$
+
+$\tr(u^{-1} \colon H^*(\ov{Y})):= \sum (-1)^i \tr(u^{-1} | H^i(\ov{Y}))$
+$\pi_* \ov{Y}|_{\Q_\ell} \simeq (I/I^2)^\vee$ finite dimensional over $\Q_\ell$
+$u$ has complete eigenvalues
+$\lambda_1,\ldots,\lambda_n$ on $\pi_*(\ov{Y})_{\Q_\ell}$.
+$u^{-1}$ has eigenvalues
+$\lambda_1,\ldots,\lambda_r$
+$\tr(u^{-1} | H^*(\ov{Y}))= \tr*u^{-1} | \text{gr}(H^*(\ov{Y}))= \tr(u^{-1} | \sym^*(I/I^2))$
+
+$\tr(u^{-1}|\sym^*(I/I^2))= \sum_{e_1,\ldots,e_n \geq 0} \lambda_1^{e_1} \lambda_2^{e_2} \cdots \lambda_n^{e_n}= \prod_{i=1}^n 1/(1-\lambda_i)$
+
+$\tr(u^{-1}| H^*(\ov{Y}))= (\det(1-u | (\pi_* \ov{Y})_{\Q_\ell}))^{-1}$
+
+Ex $\ov{Y}= B\G_m$
+$(\pi_* \ov{Y})_{\Q_\ell}$ 1-dimensional vector space
+acted on by $u= 1/q= \det(1-u)= 1-1/q$.
+
+
+Ex: Let $G$ be any connected linear algebraic group over $\F_q$ over $\F_q$, G-L trace formula for BG.
+	\[
+	\dfrac{|BG(\F_q)|}{q^{\dim BG}} = \tr(u^{-1} | H^*(\ov{BG}))
+	\]
+
+LHS is $q^{\dim G}/|G(\F_q)|$
+RHS is $(\det (1-u | \pi_*(\ov{Y})_{\Q_\ell})^{-1}$
+
+Steinberg's Formula 
+$|G(\F_q)|= q^{\dim G} \det(1-u | \pi_*(\ov{BG})_{\Q_\ell})$
+
+
+Ex: $G= \gl_n$
+$H^*(\ov{BG})= \Q_\ell[c_1,\ldots,c_n]$
+$\pi_*(\ov{BG})_{\Q_\ell}= \Q_\ell\{e_1,\ldots,e_n\}$
+$u(c_n)= q^i c_i$
+$u(e_i)= q^{-i} e_i$
+
+Steinberg
+$|\gl_n(\F_q)|= q^{n^2} (1-1/q)(1-1/q^2)\cdots(1-1/q^n)$
+
+
+In general (not assuming $\ov{Y}$ is polynomial)
+
+There is a spectral sequence $\sym^*(\pi_* \ov{Y})_\Q^\vee \to H^*(\ov{Y})$
+
+Gives some conclusion
+$\tr(u^{-1}|H^*(\ov{Y}))= \det(1-u| \pi_*(\ov{Y}))^{-1}:= \prod_i \det(1-u | \pi_1(\ov{Y}))^{(-1)^?}$ assuming everything converges. [For example, if $\pi_*(\ov{Y})_{\Q_\ell}$ is finite dimensional.] 
+
+
+
+
+This will apply when $Y= \bun_G(X)$. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
