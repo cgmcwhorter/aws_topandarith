@@ -1,3 +1,131 @@
 % !TEX root = ../../../main/aws_topandarith.tex
 \newpage
 \subsection{Lecture 4}
+
+From HH to Topological HH (HH over the sphere spectrum).
+
+Categorify HH to adapt higher order point of view
+
+$A \leftarrow \rightarrow A^{\otimes 2}$ % %double stack double arrow A^{\otimes 3}
+% GIve underlying action, Z/1, Z/2, Z/3
+
+
+Def: A cyclic object in a category $\cC$ is a simplicial object $X$ in $\cC$, i.e. $X: \Delta^\text{op} \to \cC$ such that each $X_n \in \cC$ has action by $Z/n+1$ plus some axioms. 
+
+
+
+
+Eg, $\hh(A/k)$ is cyclic object $m$ $k$-algebras (has universal property)
+
+Conner's cyclic cateogry: there exists $\Lambda \supseteq \Delta$ such that 
+
+Objects $\Lambda= $ob $\Delta=\{[n] \colon n \geq 0\}$
+$\Aut_\Lambda([n])= \Z/n+1$
+cyclic objects in $\cC \leftrightarrow$ functors $\Lambda^\op \cC$
+
+The circle appears
+
+Recall cat $E$ then topological space $|N(E)|$
+
+Fact: $|N(\Lambda)|= BS^1$ is the classifying space for the circle $S^1$. 
+
+Consequences: Any cyclic object $X$ in $k$-modules give rise to a ``object of $D(k)$ with $S^1$-action''
+
+$\underline{X}: BS^1 \to D(k)$
+simplicial set, alg/co-cat
+
+Aside: $cf, G$, a finite group
+A functor $\underline{Y}: BG \to D(k)$ is a data of 
+$* \mapsto$ some complex $Y \in D(k)$
+$g \in G \mapsto gGY$ ie an action of $G$ on $Y$, i.e. $Y$ is a $k[G]$-module
+
+Group cohom: 
+$Y^{hG}:= Rham_{k[G]}(k,Y)= \lim_{BG} \underline{Y}$
+
+Group homol:
+$Y_{hG}:= Y \otimes_{k[G]}^\mathcal{L} k = \colim_{BG} \underline{Y}$
+
+Tate cohom
+$Y^{tG}:= \underbrace{hofib}_{cone}(Y_{gH} \ma{Homo ?,g} Y^{hG})$
+
+Back to $S^1$, $\ul{X}: BS^1 \to D(k)$ is the data of 
+
+Chain complex $\in D(k)$, Dold-Kan of $X$
+Module structure over $k[S^1]$.
+$k[S^1]:= k[B\Z] \simeq k[\epsilon]/\epsilon^2$
+where $\epsilon$ is in homological degree 1.
+
+i.e. $\epsilon=B: X \to X[-1]$
+Mimic earlier definitions $x^{hS^1}:= Rham_{k[S^1]}(k,X) = \lim_{BS^1} \ul{X}$
+
+$X_{hS^1}:= k \otimes_{k[S^1]} X= \colim_{BS^1} \ul{X}$
+$X^{tS^1}:= hopfib(X_{hS^1}[1] \to norm X^{hS^1}$
+$ \in D(k)$
+
+
+If $X= \hh(A/k)$ then 
+$\hh(A/k)^{hS^1} \simeq \hc^-(A/k)$
+$\hh(A/k)_{hS^1} \simeq \hc(A/k)$
+$\hh(A/k)^{tS^1} \simeq \hp(A/k)$
+
+May now replace $A \in$ $k$-algebra $\subseteq D(k)$ by any rich enough symmetric monodial derived/$\infty$-category eg spectral sp.
+
+$D(k) \to$ restriction along $S \to k$ $Sp=D(S)$, symmetric monodial, stable $\infty$-category unit $=S$
+
+Symmetric monodial
+stable $\infty$-categ
+unit$=k$
+
+Aalg. $\to$ A Alg
+
+
+then cyclic object $\hh(A/S)=: \thh(A) \in SP$ topological HH. 
+
+$\thh(A)^{hS^1}=: \tc^-(A)$ negative top cycl hom
+$\thh(A)_{hS^1} \not=:$ top cyclic hom
+$\thh(A)^{tS^1} =: \tp(A)$ period top. cyclic hom
+
+$\in Sp$
+
+$\thh_n(A), \tc_n^-(A), \pi_n(\thh(A)_{hS^1})$
+
+homotopy groups
+$A$-modules
+$\Z$-modules
+$\tp_n(A)$
+
+Comparison with HH
+
+$\thh_n(A) \to \hh_n(A)$
+
+Kernel and cokernel killed by some $N= N(n)$
+
+If $A \supseteq \Q$, then it is an isomorphism. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
