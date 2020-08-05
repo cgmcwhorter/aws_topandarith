@@ -1,0 +1,146 @@
+% !TEX root = ../../../main/aws_topandarith.tex
+\newpage
+\section{Name: Lecture Title}
+\subsection{Lecture 1}
+\subsubsection{Lecture Name}
+
+
+%$x^2+y^2$
+%$x^2-y^2$
+%$x^2-y^2$
+
+\begin{dfn}
+$q$ and $q'$ are in the same genus if they are $\simeq$ mod $N$ for all $N>0$.
+\end{dfn}
+
+If $q$ is a form over $\Z$ and $R$ a commutative ring.
+	\[
+	\{ A \in \gl_n(R) \colon q \circ A=q \}= O_q(R) \supseteq O_q(\R) \supseteq O_q(\Z)
+	\]
+a compact Lie group of dimension $n(n-1)/2$. 
+	\[
+	\mass(q)= \sum_{q' \text{of genus }q} \dfrac{1}{|O_{q'}(\Z)|},
+	\]
+where the sum is taken over equivalence classes of quadratic forms.
+
+
+\begin{dfn}[Unimodular]
+$q$ is unimodular if nondegenerate mod $p$ for all $p$
+\end{dfn}
+
+$x^2+y^2 \equiv (x+y)^2 \mod 2$.
+
+Mass Formula (Unimodular Case):
+
+$8 \mid n$
+$\mass(q)=$ something else but
+	\[
+	\mass(q)= \sum_{q' \text{unimodular}} \dfrac{1}{|O_q(\Z)|}= \dfrac{\zeta(n/2)\zeta(2)\zeta(4)\cdots\zeta(n-2)}{\vol(S^1)\vol(S^2)\cdots\vol(S^{n-1})}
+	\]
+
+
+\begin{ex}
+$n=8$ 
+	\[
+	RHS= \dfrac{1}{2^{14}\cdot3^5\cdot5^2\cdot7}
+	\]
+Then Mass-formula tells you there is a unique unimodular form in 3 variables.
+\end{ex}
+
+
+\begin{ex}
+$n=32$
+RHS is approximately 40,000,000. Looking at left side, this implies there exists \emph{a lot} of inequivalent unimodular forms in 32 variables. 
+\end{ex}
+
+
+Let $q,q'$ are in the same genus. 
+$q= q' \circ A_N$ for some $A_n \in \gl_n(\Z/N\Z)$.
+WLOG $\{A_N\}= A \in \gl_n(\hat{\Z})$
+$\hat{\Z}= \projlim \Z/N\Z= \prod_p \Z_p$
+$q= q' \circ A \Rightarrow q,q'$ are equivalent over $\Z_p$ for all $p$
+Then $q,q'$ are equivalent over $\Q_p= \Z[1/p]$.
+
+
+Hasse-Minkowski:
+Then $q= q' \circ B$, where $B \in \gl_n(\Q)$
+$q= q' \circ A= q \circ B^{-1} \circ A$
+$B^{-1} \circ A \in O_q(\Q)/O_q(A^\text{fin})/O_q(\hat{\Z}))$
+Want to count size of this. 
+
+$B^{-1} \circ A \in O_q(\Q)/O_q(A)/O_q(\hat{\Z} \times \R))$
+
+
+$A$ has a natural topology that makes it into a locally compact ring containing $\Q$ as a discrete subring. This induces $O_q(A)$, which has the structure of a locally compact group with discrete subgroup $O_q(\Q)$ and $O_q(\hat{Z}\times\R)$, a compact open subgroup. 
+
+$O_q(\Q) / O_q(\A)$ acted on by $O_q(\hat{\Z}\times\R)$
+	\[
+	\text{\# of orbits}= \dfrac{\mu(O_p(\Q)\ O_q(\A))}{\mu(O_q(\hat{\Z}\times\R))}
+	\]
+Not quite correct. 
+
+$\so_Q(A)$ has a canonical Haar measure called Tamagawa measure
+	\[
+	2^k \mass(q)= \dfrac{\mu(\so_q(\Q) / \so_q(A))}{\mu(\so_q(\hat{\Z} \times \R))}
+	\]
+$\so_q(A)= \so_q(\R) \times \prod_p^\text{res} \so_q(\Q_p)$
+$V_\R$ is the space of translation invariant topological forms on $\so_q(\R)$.
+$V_\R \supseteq V_\Q$ the space of translation invariant topological forms on $\so_q(\Q)$
+
+
+$V_{\Q_p}$ the space of translation invariant topological forms on $\so(\Q_p)$
+
+$\so_q(\Q_p)$ is a $p$-adic analytic Lie group. 
+
+$0 \neq \omega \in V_\Q \mapsto \mu_{\omega,\R}$
+
+$0 \neq \omega \in V_\Q \mapsto \mu_{\omega,\Q_p}$
+
+Tamagawa Measure
+	\[
+	\mu_\text{Tam}= \prod_p \mu_{\omega,\Q_p} \times \mu_{\omega,\R}
+	\]
+independent of $\omega$
+	\[
+	\mass(q)= 2^{-k} \dfrac{\mu_\text{Tam}(\so_q(\Q)/\so_q(\R))}{\mu_\text{Tam}(\so_q(\hat{\Z}\times\R))}
+	\]
+
+$\so_q(\hat{\Z}\times\R)= \so_q(\R) \times \prod_p \so_q(\Z_p)$
+$\mu_\text{Tam}(\so_q(\hat{\Z}\times\R)) \defeq \mu_{\omega,\R}(\so_q(\R)) \times \prod_p \mu_{\omega,\Q_p}(\so_q(\Z_p))$
+
+
+Mass Formula (Tamagawa-Weil Version)
+$\mu_\text{Tam}(\so_q(\Q) / \so_q(\A))= \Z$
+$\so_q$ has a two-sheeted double cover $\spin_q$
+
+Equivalent:
+$\mu_\text{Tam}(\spin_q(\Q) / \spin_q(A))=1$
+
+Conjecture (Weil)
+
+Let $G$ be a simply connected semisimple algebraic group over $\Q$
+$\mu_\text{Tam}(G(\Q)/G(\A))=1$, where $G(\Q)$ is $\tau_G$, the Tamagawa number of $G$.
+
+Now a theorem, proved by Weil in many cases, Langlands when split group, \dots, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+% !TEX root = ../../../main/aws_topandarith.tex
+\newpage
+\section{Name: Lecture Title}
+\subsection{Lecture 1}
+\subsubsection{Lecture Name}
+
+
+$X \to \spec(\F_q)$, where $X$ smooth projective curve over $\F_q$, write $K_X$ for the fraction field of $X$. A field which arrives this way is called a function field.
+
+\begin{minipage}{0.45\textwidth}
+Number Fields
+$\Q$ prime numbers $p$ and point at $\infty$
+$\Z/p\Z$
+$\Z_p$
+$\Q_p$ or $\R$
+$\A$
+quadratic form $q_0$ over $\Q$ ($\so_{q_0}$)
+$\so_{q_0}(\Q) \subseteq \so_{q_0}(\A)$
+$\mu_\text{Tam}$
+$\mu_\text{Tam}(\spin_{q_0}(\Q)/ \spin_{q_0}(A))$
+q quadratic form over $\Z$
+$\so_q(\Z/p\Z)$
+$\mass(q)= \sum_{q' \text{quad at }q} \dfrac{1}{|O_q(\Z)|}$
+Mass Formula
+\end{minipage} %
+%
+%
+\begin{minipage}{0.5\textwidth}
+Function Fields
+closed points $x \in X$
+$k(x)$ field at $x$
+$\O_x$ complete local ring of $X$ at $\O_x \cong k(x)[[z]]$
+$K_a \sim k(x)((t))$
+$\A_x= \prod_{x \in X}^\text{res} K_x$
+semisimple group $G_0$ over $K_x$
+$G_0(K_x) \subseteq G_0(A_x)$
+$\mu_\text{Tam}$
+$\mu_\text{Tam}(G(K_x)/G_0(A_x))=1$
+group scheme $G \to X$ (Ex: $G= X \times \gl_n$, $G= X \times \sl_n$)
+$G(X(x))$
+$\sum_{\text{Prin G-bund P on X}} \dfrac{1}{|\Aut(P)|}$
+Mass Formula $\sum_p \dfrac{1}{|\Aut(P)|}= q^D \prod_{x \in X} \dfrac{|??|}{|??|}$, where $d= \dim(G_0 Y K_x)$
+\end{minipage}
+
+
+$\bun_G(X)$ the moduli stack of $G$-bundles
+
+Maps: $\spec R \to \bun_G(X)$
+similar $G$-bundle on $X \times_{\spec(\F_q)} \spec R$
+
+Goal: 
+Compute $\sum \dfrac{1}{|\Aut(S)|} =: |\bun_G(X)(\F_q)|$
+
+Digression
+$Y$ algebraic variety over $\F_q$
+$|Y(\F_q)|$
+Idea: $\ov{Y}:= Y \times_{\spec \F_q} \spec(\ov{F}_q)$
+Think of $Y(\F_q) \subseteq \ov{Y}$
+$\ov{Y} \ma{u} \ov{Y}$, where $u$ is geometric frobenius 
+	\[
+	\begin{tikzcd}
+	\ov{Y} \arrow{r}{u} & \ov{Y} \\
+	\P^n \arrow{r}{u} & \P^n
+	\end{tikzcd}
+	\]
+$[x_0:\cdots:x_n]$, $[x_0^q:\cdots:x_n^q]$
+
+$Y(\F_q)$ fixed points of $u$
+
+
+Ideal (Weil)
+$|Y(\F_q)|$ should be $\sum (-1)^i \tr(u \;|\; H^i(\ov{Y}))$
+
+
+This is now a theorem of Grothendieck-Lefschetz Formula
+
+
+Assume $Y$ smooth of dimension $d$
+
+$H_i^i(\ov{Y}) \sim H^{2d-i}(\ov{Y})^\vee$ poincare duality
+Not $u$-equivariant
+
+$\sum (-1)^i \tr(u^{-1} \;|\; H^i(\ov{Y}))= \dfrac{|Y(\F_q)|}{q^?}$
+
+
+
+Idea apply this to $Y= \bun_G(X)$
+
+\begin{dfn}
+$Y= \bun_G(x)$ satisfies the trace formula if
+	\[
+	\dfrac{ \sum \dfrac{1}{|\Aut(P)|}}{ q^{\dim \bun_G(X)}= \sum (-1)^i \dfrac{\tr(u^{-1})}{|H^i(\ov{\bun_G(x)})|} =: \tr|u^{-1}| H^*(\ov{\bun_G(X)})}^?
+	\]
+\end{dfn}
+
+
+Weil's conjecture follows from two assertions
+
+1. $\bun_G X$ satisfies GL
+$\dfrac{\sum 1/|\Aut(P)|}/q^D= \tr(u^{-1}\;|\; H^*(\ov{\bun_G(X)}))= $
+
+2 $\prod_{x \in X} \left(\dfrac{|G(k(X))|}{|K(x)|^d}\right)^{-1}$
+
+
+
+First equality in 1. shown by theorem of Behrend in case $G$ is a constant group, or everywhere semisimple. 
+
+
+Digression:
+
+Let $x \in X$ be closed point. $\bun_G(\{x\})= BG_x$.
+
+
+$\bun_G(\{x\})(\F_q)$ is set of principle $G$-bundles on $\spec(k(X))$
+has one object, namely symmetry group is $G(K(x))$
+	\[
+	\dfrac{|\bun_G(\{x\})(\F_q)|}{q^{\dim \bun_G(\{x\})}}= \dfrac{|k(x)|^d}{|G(k(x))|}
+	\]
+$\bun_G(\{x\})$ satisfy GL trace formula
+	\[
+	\dfrac{|k(x)|^d}{|G(k(x))|}= \tr(u^{-1} \;|\; H^*(\ov{\bun_G(\{x\})}))
+	\]
+$\tr(u^{-1} \;|\; H^*(\bun_G(X))= \prod_{x \in X} \tr(u^{-1}\;|\; H^*(\bun_G(\{x\})))$.
+
+$\bun_G(X)= \prod_{x \in X}^\text{cont} \bun_G(\{x\})$
+
+$H^?(\ov{\bun_G(X)})= \bigoplus_{x \in X}^\text{cont} H^*(\bun_G(\{x\}))$
+Makes sense using theory of factorization homology
+
+$\prod_{x \in X} \dfrac{1}{1- 1/|k(x)|^2}$
+$|\sl_2(\F_q)|/q^{\dim}= (q^3-q)/q^3= 1-1/q^2$
+
+$\bun_G(X)= \sqcup \phantom{a}_{x \in \Z} \bun_G^?(x)$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

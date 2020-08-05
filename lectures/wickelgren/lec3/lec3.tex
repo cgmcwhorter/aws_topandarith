@@ -1,0 +1,252 @@
+% !TEX root = ../../../main/aws_topandarith.tex
+\newpage
+\section{Name: Lecture Title}
+\subsection{Lecture 1}
+\subsubsection{Lecture Name}
+
+Sheaves: $K^{MW}_*, GW$
+$GW(\spec L \to \spec L)= $ restruction $\O_K L$ or bilinear forms
+
+Transfers: $K \subseteq L$ finite extension of finite schemes over $R$
+
+$\tr_{L/K}: GW(L) \to GW(K)$
+
+geometric transfer, cohomological transfer, absolute transfer
+depends on generators, does not, twisted
+$\tr_{L/K}(B: V \times V \to L)= V \times V \ma{B} \to L \ma{\tr_{L/K}} K$ when $K \subseteq L$ is separable. 
+
+
+geometric: $L= k[z]/ \langle f \rangle$
+
+$\spec L \stackrel{z}{\hookrightarrow} \P_k^1$
+$\P^1_k \to \P_k^1/\P^1 \setminus \{z\}$ is a map $\tr_{L/K}^\text{geo} GW(L) \to GW(K)$
+
+CH: Chow groups $X \in \sm_k$
+
+$X^{(i)}$ is codimension $i$ reduced, irreducible subschemes of $X$
+
+$\ch^i(X)= \bigoplus_{X^{()}} \Z/$rational equivalence
+
+$V \subset X \times \P^1$
+$V \wedge (X \times \{0\}) \sim V \wedge (X \times \{1\})$
+
+useful in enumerative geometry: chern classes, pushforward pullbacks, ring structure
+Bloch $\ch^i*X(= H^i(X,K_i^{M})$ 
+
+
+
+Oriented Chow groups or Chow-Witt group
+
+$\tilde{\ch}^i(X)= H^i(X, K_i^{MW})$ elements are formal rank $Z \in X^{(i)}$ and 
+
+Barge-Morel
+
+Computed by Rost-Schmidt complex
+
+$\oplus_{Z \in X^{(i+1)}} K_1^{MV}(k(x),\det) \to \oplus_{z \in X^{i}} GW(k(z),\det_{k(z)} T_zX) \to \oplus_{z \in X^{(i+1)}} K_{-1}^{MW} (k(z),\det)$
+
+
+Fasel, M. Levine: pullbacks $f: X \to Y$ pushforward, non-commutative ring structure
+
+$E$ field, $\Lambda$ 1-dimensional $E$ vector space
+$K_i^{MW}(E,\Lambda)= K_i^{MW}(E) \otimes \Z$ $\Z[E]$
+$\tilde{\ch}^i(X,L)= H^i(X,K_i^{MW}(i))$
+
+
+$L \to X$ line bundle
+$f: X \to Y$ proper $\dim Y - \dim X=r$
+$f_* \tilde{\ch}(X, \omega_{X/Z} \otimes f^* y)$
+$\det TX$
+$\to \tilde{\ch}^{i-r}(Y, w_{Y/Z} BX)$
+
+
+Degree via local degree
+
+Algebraic topology
+
+$f: S^n \to S^n$ 
+$p \in S$
+$\deg f= \sum \deg_q f$
+$f^{-1}(p)= \{q_1,\ldots,q_n\}$
+
+Differential topology formula for $\deg_{x_i} f$
+choose coordinates $x_1,\ldots,x_n$ near $q_i$
+$y_1,\ldots,y_n$ near $P$
+$f: \R^n \to \R^n$
+
+$\jac f= \deg \frac{\partial f_i}{\partial x_i}$
+
+	\[
+	\deg_{q_i} f=
+	\begin{cases}
+	1, & \text{ if } \jac f >0 \\
+	-1, & \text{if }\jac f<0
+	\end{cases}
+	\]
+
+
+
+$\A^1$-alg topology
+
+Lanes/Morel: $f: \P^1 \to \P^1/k$
+$p \in \P^1(k)$
+$f^{-1}(p)=\{q_1,\ldots,q_n\}$
+$\deg f= \sum (\jac_{q_i} f) \in GW(k)$
+
+this does not depend on $P$
+
+
+Prop: (Global degree is a sum of local degrees)
+
+$f: \P^n \to \P^n$ finite $f^{-1}(\A^n) = \A^n$
+$\P^n/\P^{n-1} \ma{\overline{f}} \P^n/\P^{n-1}$
+
+
+$\deg \overline{f}= \sum_{q \in f^{-1}(p)} \deg_q^{\A^1} f$
+$p \in \A^n(k)$
+
+where $\deg_q^{\A^1} f$ is degree of composite
+
+	\[
+	\P^n/\P^{n-1} \cong U/U-q \to \A^n /\A^n-p \cong \P^n/\P^{n-1}
+	\]
+$k(q)=k$, $\th N_p \A^*$
+
+otherwise $\P^n/\P^{n-1} \to \P^n/\P^n - q$
+
+If $f$ is \'etale at $q$, then $\deg_q^{\A^1} f = \tr_{k(q)/k} \langle \jac f(q) \rangle$
+and $k(q) \supseteq R$ separable. 
+
+
+A: Eisenbud-Lenine-Khinskdhflskhdfklashdgahsdgliadg lsdighasdgh Signature formula
+
+$f: \R^n \to \R^n$
+$0 \mapsto 0$ isolated zero
+
+$\deg f=$ signature $\omega^{EKL}$
+
+$\omega^{EKL}$ is a bilinear form
+$Q= \R[x_1,\ldots,x_n]_0/\langle f_1,\ldots,f_n \rangle$
+
+$\jac f \in Q$
+pick any $\eta: Q \to \R$
+$\R$-linear so that 
+$\eta(\jac f)= \dim Q$
+$\omega^{EKL}: Q \times Q \to \R$
+$(a,b) \mapsto \eta(ab)$
+
+Q (Eisenbud): $\omega^{EKL}$ could be a degree even replacing $\R$ with $K$. DOes this have an interpratation?
+
+Thm: (Kass-W.)
+$\deg_0^{\A^1} f= \omega^{EKL}$
+
+Project: remove $k(x)=k $hypothesis
+
+Ex: $\omega^{EKL}$ for $f(x)=x^2$
+$Q= k[x]/\langle x^2 \rangle$ basis $\{1,x\}$
+$\jac f= \partial x$
+$\eta: k[x]/\langle x^1 \rangle \to k$
+$\eta(2x)=2$
+$\eta(1)=0$
+
+\begin{tabular}{ccc}
+& 1 & $x$ \\
+1 & 0 & 1 \\
+$x$ & 1 & 0 
+\end{tabular}
+
+
+$\omega^{EKL}= \langle 1 \rangle + \langle -1 \rangle$ 
+
+
+$\A^1$-milnor numbers
+
+joint with Jesse Kass
+
+Def: A point $p$ on a scheme $X$ is a node if after base change to $k^?$
+$\hat{\O}_{X,p} \cong k^s[[x_1,\ldots,x_n]]/(x_1^2+\cdots+x_n^2+ \text{hot})$
+
+Let $X$ be a hypersurface $X= \{f=0\} \subseteq \A^n$
+$p \in X$ be a singularity
+As $X$ is perturbed in a family $P$ bifercates into nodes for $(a_1,\ldots,a_n)$ have a family of hypersurfaces $f(x_1,\ldots,x_n) + a_1x_1+\cdots+a_nx_n= f$ parametrized by $+$
+
+
+Milnor
+$k= \C$
+FOr any sufficiently small $(a_1,\ldots,a_n)$ the family contains $\mu(P)$ nodes
+
+$\mu(P)=$ milnor \# $= deg (grad f)(p)$
+
+When $k$ is not algebraically closed, nodes $p$ contain arithmetic data
+
+$R= \R$
+
+% plot x^2+y^2=0, axes with solid dot origin
+nonsplit node, i.e. tangent directions not defiend over $k$
+
+% x^2-y^2=0 
+split node
+
+
+Def: The type of a node $p \in \{f=0\}$
+$\deg_p^{\A^1} grad f$
+
+Ex: Choose preimage of $p$ after base change to $k(p)$
+
+$\hat{\O}_{X,p}= k[[p]][[x_1,\ldots,x_n]]/(a_1x^2+\cdots+a_nx^2+ \text{hot})$
+
+type$(p)= \tr_{k(p)/k} \langle 2^na_1a_2\cdots a_n \rangle$, $k(p)/k$ always a seprable extension. 
+
+
+
+Ex: type$(x^2+y^2)= \langle a \rangle$
+
+Def: $p$ hypersurface singularity $p \in \{f=0\}$
+$M^{\A^1}= \deg_p grad f$
+
+Thm: For generic $(a_1,\ldots,a_n)$ Crass-W.
+
+$\sum_{X nodes in family} type (X)= M^{\A^1}(p)$ in GW(k).
+
+
+Ex: $f(x,y)= y^2 - x^2$
+$grad f= (-3x^2,2y)$
+$M^{\A^1}(0)= \deg_0 grad f= \deg_0 (x \mapsto -3x^1) \deg_0(y \mapsto 2y)= \langle -3 \rangle ( \langle 1 \rangle + \langle -1 \rangle) \langle 2 \rangle= \langle -6 \rangle + \langle 6 \rangle= \langle 1 \rangle + \langle -1 \rangle = h$
+
+Family parametrized by $+$
+$y^2= x^3+ax+t$
+
+$a=0$
+% Give picture 
+
+nodes occur when $x^3+ax+t$ has a double root iff $=27t^2-4a^3$
+
+$\F_3: \langle 1 \rangle= \langle -1 \rangle$ in a famiyl cant have one split and one nonsplit rational nodes
+
+$\F_7: \langle 1 \rangle \neq \langle -1 \rangle$ cant have 2 split or 2 nonsplit nodes. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

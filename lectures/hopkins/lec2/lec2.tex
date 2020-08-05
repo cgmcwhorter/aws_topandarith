@@ -1,0 +1,203 @@
+% !TEX root = ../../../main/aws_topandarith.tex
+\newpage
+\section{Name: Lecture Title}
+\subsection{Lecture 1}
+\subsubsection{Lecture Name}
+
+Ex: $G_m$,
+$x+y-xy= 1 - (1-x)(1-y)$
+over $\Z_p$
+$\Aut G_m= \Z_p^\times$
+$\lambda \in \Z_p^\times$
+$x \mapsto 1 - (1-x)^\lambda$
+
+Lubin-Tate ring $\Z_p$
+$\Aut G_m$ acts trivially.
+
+$E_0= W[[u_1,\ldots,u_{n-1}]]$
+$E_*= W[[u\cdots u_{n+1}[u^{\pm 1}]$, $|u|= -2$
+
+$\Z_p[u^{1/2}]$
+$\lambda \in \Aut(G_m)= \Z_p^\times$
+How does $\lambda$ act on $u$?
+
+$u^{-1}$ is an invariant differential on $G_m$
+$u^{-1}$ is $dx+ \cdots= (1-x)\;dx$
+
+$1-(1-x)^\lambda= \lambda x + \text{hot}$
+$u^{-1} \mapsto \lambda u^{-1}$. 
+
+$H^*(\Z_p^\times: \Z_p[u^{\pm 1}])$, $p>2$
+$\lambda^{-1} \in \Z_p^\times$
+$\lambda^{-1}$ generates $\Z_p^\times$ map 
+$(\lambda^{-1})^{p-1} \neq 1 \mod p^2$
+
+$H^1(\Z_p^\times : u^n \Z_p)= \Z_p/(\lambda^n-1)$
+$n \neq 0$
+
+Makes sense for $\lambda \mapsto \lambda^n$
+Replace by $\Hom(\Z_p^\times,\Z_p^\times)$
+
+
+$n=2$ 
+$\Gamma$ is formal group over $k$ of height 2
+$H^*(\Aut \Gamma; W[[u_1]])=?$
+
+It turns out, $p>3$
+$\Lambda[x_1,x_3]=H^*(\Aut \Gamma; W) \ma{x} H^*(\Aut \Gamma; W[[u_1]])$
+
+
+Dieudonne modules
+
+$k$ perfect field
+$W$ ring of Witt vectors of $k$
+$k$ acts on $u$, $u(x)= x^p$
+$W$ acts on $u$
+
+Diuedonne-module:
+$M$ free $W$-module of finite rank
+$F: u^*M \to M$
+$F(am)= a^u F(m)$ for a$a \in W$,
+
+$V: M \to u^*M$
+$V(a^um)= aUM$,
+$FU=UF=p$
+
+Formal groups over $k$ $\leftrightarrow$ diedonne modules
+
+height $\leftrightarrow$ $\dim_W M$
+dim $\leftrightarrow \dim_k M/VM$
+
+
+
+Ex: $M$ basis $\gamma, U\gamma$
+$F\gamma= V \gamma$
+
+This $M$ $\leftrightarrow$ height 2 formal group over $k$
+
+
+$n \neq $
+
+$\{\gamma, V \gamma, \ldots, V^{n-1} \gamma\}$
+$F\gamma= V^{b-1} \gamma$
+
+$\Aut \Gamma$, ht 2
+$\gamma \to a \gamma + b V \gamma$
+$V\gamma \to a^{\phi^{-1}} V \gamma + b^{\phi^{-1}} V^2 \gamma = a^{\phi^{-1}} V \gamma + p b^{\phi^{-1}} \gamma$
+
+$F\gamma \to a^{\phi} V \gamma + p b^\phi \gamma$
+$a,b \in W\F_{p^2}$
+
+$F\gamma = V\gamma$
+$p \gamma = VF\gamma= V^2 \gamma$
+
+$\Aut(\Gamma)= \{ \two{a}{pb^{\phi^{-1}}}{b}{a^{\phi^{-1}}} \colon a,b \in W\F_{p^2}\}$. 
+
+
+Tapis de Cartier
+	\[
+	\begin{tikzcd}
+	M \arrow[dotted]{r}{T} \arrow{d} & W \arrow{d} \\
+	M/VM \arrow{r}{\sim} & k
+	\end{tikzcd}
+	\]
+lifts of $\Gamma$ to $W$. 
+
+
+Dotted map $W$-linear specialization $\gamma \to 1$?
+
+Bottom map $\gamma \mapsto 1$
+
+$U_1(T)= T(V\gamma)$
+$W[[u_1]]$
+
+$\gamma \ma{y} a \gamma + bV \gamma$
+$V \gamma \to a^{\phi^{-1}} V \gamma + p b^{\phi^{-1}} \gamma$
+$y(u_1)= (a^{\phi^{-1}} u_1 + pb^{\phi^{-1}})/(bu_1+a)$
+
+
+
+Crystalline Approximation
+
+$M \to E_{-2}= uW[[u_1 \cdots u_{n-1}]]$
+
+$\gamma \to u$
+$V \gamma \to uu_1$
+$\vdots$
+$V^{n-1}\gamma \to uu_{n-1}$
+$\Aut \Gamma$ equivalent. 
+
+$G$
+$k \leftarrow W \rightarrow u \otimes W$ 
+$G \cong O_n$
+
+$\Gamma$
+
+$f(\gamma) = \log_G(x)= x+ \cdots + u \otimes w[[x]]$
+$f^{-1}(f(x)+f(y))= x \fplus y$
+
+
+Ex: $\log_{G_m}(x)= \sum x^n/n$
+
+$T: M \to W$
+$f(x)= \sum T(F^n \gamma) x^{p^n}/p^n$
+is the log of a formal $?$ over $W$
+
+
+Ex: $G= G_m$
+$M= ?\{\gamma\}$
+$F\gamma= \gamma$
+
+$\log = \sum x^{p^n}/p^n$
+
+Ex: ht$=2$ 
+$T(\gamma)=1$
+$T(v\gamma)=0$
+$f(y)= \sum x^{p^{2n}}/p^n= l(x)$
+
+$W[[w_1]]$
+$T(\gamma)=1$
+$T(V\gamma)=W_1$
+
+$f(x)= l(x)+ w_1/p l(x^p)$
+$f^{-1}(f(y)+f(y))$ does not have coefficients in $?[[w_1]]$
+
+It does have coefficient in the divided power completion $w<<w_1>>$. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

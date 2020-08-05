@@ -1,0 +1,154 @@
+% !TEX root = ../../../main/aws_topandarith.tex
+\newpage
+\section{Name: Lecture Title}
+\subsection{Lecture 1}
+\subsubsection{Lecture Name}
+
+We start with the famous theorem of Kronecker-Weber Theorem.
+
+\begin{thm}
+If $K/\Q$ is an abelian Galois extension, then $K= \Q(\zeta_n)$ for some $n$, where $\zeta_n$ is a (primitive) $n$th root of unity. 
+\end{thm}
+
+Kronecker's famous JugendTraub. Want to construct? Using the roots of unity. to make abelian Galois extensions. 
+
+
+
+
+
+Lubin-Tate: Get Galois extensions using formal groups. Formal group law over $R$. $F(x,y)= x\fplus y= x + y + \cdots$
+
+$x\fplus 0 = 0\fplus x= x$
+$x\fplus y= y \fplus x$
+$(x \fplus y) \fplus z = x \fplus (y \fplus z)$
+
+Lie variety over $R$
+Objects $\A^n$, $n= 0,1,\ldots$
+maps $\A^n \to \A^1$, $f(x_1,\ldots,x_n) \in R[x_1,\ldots,x_n]$
+$\A^n= A^n \to \prod \A^1$ 
+
+
+Question: How many formal group laws are there? How to construct formal group laws?
+
+\begin{thm}[Lazard]
+$R \mapsto$ formal group laws over $R$, ring($L,R$), $L= \Z[x_1,x_2,\ldots]$.
+\end{thm}
+
+Isomorphism $F \ma{g} G$
+$g(x)$
+$g(x \fplus y)= g(x) \fplus g(y)$
+
+Universal isomorphism over $L[s_1,s_2,\ldots]$
+
+
+
+Algebraic Topology
+
+Cohomology theories $E$ with Chern classes in complex line bunles,
+$V /X \to c_i(X) \in E^{2n}(X)$
+$c_n(V\C)_N= \sum_{i+j=n} c_i(Y) c_j(W)$
+
+Not true in general $c_1(L_1 \otimes L_2)= c_1(L_1)$
+
+
+\begin{thm}[Quillen]
+For general, $E$, there exists a formal group law $F$
+$c_1(L_1 \otimes L_2)= F(c_1(L_1),c_1(L_2))= c_1(L_1) \fplus c_1(L_2)$
+\end{thm}
+
+$H^s(\m_{FG}, \omega^*) \Rightarrow \pi_{2t-s}S^0= \lim_{n \to \infty} \pi_{2t-s+n} S^n$
+$\omega= \lie F^*$
+
+% Give picture
+
+
+\begin{ex}
+$G_n$ $x+y$
+$G_m$ $x+y-xy= 1-(1-x)(1-y)$
+
+Are these isomorphic?
+
+$g(x)= 1 - e^{-x}$
+$g(x+y) \stackrel{=}{\text{maybe}}= g(x)g(x) - g(x)g(y)$
+over $\Q$-algebra
+So isomorphic over rationals.
+
+Are they isomorphic over $\F_p$? Are there even homomorphisms between them?
+Suppose $g: G_n \to G_m$ is one such
+$g(x+\cdots+x)= 1-(1- g(x))^p$
+$0= g(0)= g(x)^4= g^0(x^p)$ so that $g=0$ so no homomorphisms from additive group to multiplicative group. 
+\end{ex}
+
+
+Height: 
+
+$R=k$ field of char $p>0$
+$f: G_1 \to G_2$
+Then there exists unique $g(x)$, $g'(0) \neq 0$, $y= p^a$
+$f(x)= g(x^q)$
+$a$ is the height of $f$.
+Height of a formal group is by definition the height of mult by $p$
+height $G_n= \infty$
+height $G_m= 1$
+
+\begin{thm}[Dieudonne]
+$k$ perfect algebraically closed, any two formal groups of the same height are isomorphic. 
+\end{thm}
+
+
+Lubin-Tate deformation spaces
+$\Gamma$, $k$ field char $p>0$, $B$ complete local $\m$-maximal local
+
+A deformation of $\Gamma$ to $B$ 
+$B \ma{r} B/\m \stackrel{i}{\leftarrow} k$
+
+$(G,i,f)$, $G \ma{f} i^*\Gamma$
+Deform$_\Gamma(B) \leftarrow$ groupoid
+
+\begin{thm}[L-T]
+$n=$ height of $\Gamma$
+$\pi_0$ Deform$_\Gamma(B)= \m^{n-1}$
+\end{thm}
+
+We want to understand this set $\m^{n-1}$ mod by automorphisms of $\Gamma$.
+
+
+$G_\text{univ}$ universal deformation 
+$W[[u_1,\ldots,u_{n-1}]]$
+$W$ witt vectors of $k$
+Universal deformation
+
+
+$E_0= W[[u_1-u_{n-1}]]$
+$E_*= W[[U_1-u_{n-1}]][u,u^{-1}]$, $|u|= -2$
+
+Aut $\Gamma= S_n$, acts on $E_*$
+$UE_0= E_{-2}$ sections of Lie $G$
+interested in $H^*(S_n; E_0)$, not the symmetric group
+$H^*(S_n; E_{2n})$
+
+
+Question: Can one write down explicitly the action of $\Aut \Gamma$ on $W[[u_1-u_{n-1}]]$.
+
+Question: What is $\pic$(Lubin tate) $=H^1(\Aut \Gamma; E_0^*)$, conjectured answer enlists known $n=2$, $p>5$
+
+
+Observation: $n=2$, $H^*(S_n; W) \ma{\sim} H^*(S_n;E_0)$
+$p>3$ Shimomura
+$p \leq 3$ Beaudiy, Bobkova, Behrens, Wenn, \dots
+True for $n>2$?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
