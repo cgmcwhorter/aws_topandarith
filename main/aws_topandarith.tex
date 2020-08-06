@@ -2,7 +2,7 @@
 \usepackage[tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
 \usepackage{../style/packages}
 \usepackage{../style/commands}
-\setbool{noteonly}{false}
+\setbool{notesonly}{false}
 
 % -------------------
 % Content
@@ -60,7 +60,7 @@
 % -------------------
 % Course/Project Outlines
 % -------------------
-\ifbool{noteonly}{}{%
+\ifbool{notesonly}{}{%
 \newpage
 \thispagestyle{empty}
 \part{Course/Project Outlines \& Lecture Notes}
@@ -68,19 +68,79 @@
 
 %\setcounter{section}{1}
 
-%% Poonen
-%\phantomsection
-%\addtocounter{section}{1}
-%\addcontentsline{toc}{section}{\protect\numberline{\thesection} Bjorn Poonen}
-%\phantomsection
-%\setcounter{subsection}{1}
-%\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Lecture Notes}
-%\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/poonen/p-adic_approach.pdf}
+% Hopkins
+\phantomsection
+\addtocounter{section}{1}
+\addcontentsline{toc}{section}{\protect\numberline{\thesection} Michael Hopkins: Lubin-Tate spaces: old and new questions}
+\phantomsection
+\setcounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Course \& Project Outline}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/hopkins/2019HopkinsOutline.pdf}
+\phantomsection
+\addtocounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Lecture Notes \& Project Description}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/hopkins/2019HopkinsNotes.pdf}
 
+% Lurie
+\phantomsection
+\addtocounter{section}{1}
+\addcontentsline{toc}{section}{\protect\numberline{\thesection} Jacob Lurie: Tamagawa numbers in the function field case}
+\phantomsection
+\setcounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Course \& Project Outline}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/lurie/2019LurieOutline.pdf}
+\phantomsection
+\addtocounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Lecture Notes \& Project Description}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/lurie/2019LurieNotes.pdf}
 
+% Morrow
+\phantomsection
+\addtocounter{section}{1}
+\addcontentsline{toc}{section}{\protect\numberline{\thesection} Matthew Morrow: Topological Hochschild homology in arithmetic geometry}
+\phantomsection
+\setcounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Course \& Project Outline}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/morrow/2019MorrowOutline.pdf}
+\phantomsection
+\addtocounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Lecture Notes \& Project Description}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/morrow/2019MorrowNotes.pdf}
+
+% Wickelgren
+\phantomsection
+\addtocounter{section}{1}
+\addcontentsline{toc}{section}{\protect\numberline{\thesection} Kirsten Wickelgren: $\A^1$-enumerative geometry}
+\phantomsection
+\setcounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Course \& Project Outline}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/wickelgren/2019WickelgrenOutline.pdf}
+\phantomsection
+\addtocounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Lecture Notes \& Project Description}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/wickelgren/2019WickelgrenNotes.pdf}
+
+% Problem Groups
+\phantomsection
+\addtocounter{section}{1}
+\addcontentsline{toc}{section}{\protect\numberline{\thesection} Problem Sessions}
+\phantomsection
+\setcounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Vesna Stojanoska: Formal groups and cohomology theories}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/problem_groups/2019StojanoskaProblems.pdf}
+\phantomsection
+\addtocounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Inna Zakharevich: The geometry of algebra and the algebra of geometry: model categories, infinity categories and spectra}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/problem_groups/2019ZakharevichProblems.pdf}
+\phantomsection
+\addtocounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Emily Riehl: A leisurely introduction to simplicial sets}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/problem_groups/ssets.pdf}
+\phantomsection
+\addtocounter{subsection}{1}
+\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Martin Speirs: Formal groups and cohomology theories reading projects for Morrow study group}
+\includepdf[pages=-,scale=1,pagecommand={\thispagestyle{normal}}]{../notes/problem_groups/2019SpeirsStudyNotes.pdf}
 }
-
-
 
 
 % -------------------
